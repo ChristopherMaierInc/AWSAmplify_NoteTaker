@@ -9,6 +9,11 @@
             "UnauthRoleName": "amplify-notetaker-master-20190504143154-unauthRole",
             "StackName": "amplify-notetaker-master-20190504143154",
             "StackId": "arn:aws:cloudformation:us-east-1:189423060447:stack/amplify-notetaker-master-20190504143154/8d299a30-6e25-11e9-9062-0eff07caa3c6"
+        },
+        "categories": {
+            "auth": {
+                "cognito34790f13": {}
+            }
         }
     }
 }
