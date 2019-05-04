@@ -41,11 +41,21 @@ const App = () => {
             value={note}
             placeholder="Write Your Note"
             className="pa2 f4"
-            onChange={({ target }) => setNote(target.value) }
+            onChange={({ target }) => setNote(target.value)}
           />
           <button className="pa2 f4" type="submit">Add</button>
         </form>
         { /* Note List */}
+        <div>
+          {notes.map((item, i) => (
+            <div key={item.id} className="flex items-center">
+              <li className="list pa1 f3">{item.note}</li>
+              <button className="bg-transparent bn f4">
+                <span>&times;</span>
+              </button>
+            </div>
+          ))}  
+        </div>
     </div>
   );
 };
